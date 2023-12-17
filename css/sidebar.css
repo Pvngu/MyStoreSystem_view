@@ -399,17 +399,21 @@ opacity: 1;
     padding: 4px 15px;
 }
 
-.lgtModal .logoutText{
+.logoutText{
     padding-block: 8px;
 }
 
-.lgtModal .logoutButtons{
+.logoutButtons{
     float: right;
     padding-top: 25px;
     padding-bottom: 15px;
 }
 
-.lgtModal .logoutButtons button{
+.logoutButtons form{
+    display: inline-block;
+}
+
+.logoutButtons button{
     font-family: 'Poppins';
     font-weight: 600;
     padding: 6px 16px;
@@ -421,7 +425,7 @@ opacity: 1;
     color: #fff;
 }
 
-.lgtModal .logoutButtons #logoutClose{
+.logoutButtons #logoutClose{
     background: #F0F4FA;
     color: #4f5463;
 }

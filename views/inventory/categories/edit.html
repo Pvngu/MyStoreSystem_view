@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Users | MyStore System</title>
+    <title>Create categories | MyStore System</title>
     <link rel="stylesheet" href="/../../css/sidebar.css">
     <link rel="stylesheet" href="/../../css/table.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -51,16 +51,16 @@
                     <span class="tooltip">inventory</span>
                     <ul class="submenu-items sm-inv">
                         <li>
-                            <a href="..\inventory\items\items.html">Items</a>
+                            <a href="..\items\items.html">Items</a>
                         </li>
                         <li>
-                            <a href="..\inventory\items\create.html">New Items</a>
+                            <a href="..\items\create.html">New Items</a>
                         </li>
                         <li>
-                            <a href="..\inventory\categories\categories.html">Categories</a>
+                            <a href="categories.html">Categories</a>
                         </li>
                         <li>
-                            <a href="..\inventory\categories\create.html">New Category</a>
+                            <a href="create.html">New Category</a>
                         </li>
                     </ul>
                 </li>
@@ -73,10 +73,10 @@
                     <span class="tooltip">Orders</span>
                     <ul class="submenu-items sm-orders">
                         <li>
-                            <a href="..\orders\orders.html">View Orders</a>
+                            <a href="..\..\orders\orders.html">View Orders</a>
                         </li>
                         <li>
-                            <a href="..\orders\create.html">New Order</a>
+                            <a href="..\..\orders\create.html">New Order</a>
                         </li>
                     </ul>
                 </li>
@@ -89,10 +89,10 @@
                     <span class="tooltip">Customers</span>
                     <ul class="submenu-items sm-customers">
                         <li>
-                            <a href="..\customers\customers.html">View Customers</a>
+                            <a href="..\..\customers\customers.html">View Customers</a>
                         </li>
                         <li>
-                            <a href="..\customers\create.html">New Customer</a>
+                            <a href="..\..\customers\create.html">New Customer</a>
                         </li>
                     </ul>
                 </li>
@@ -105,10 +105,10 @@
                     <span class="tooltip">Users</span>
                     <ul class="submenu-items sm-users">
                         <li>
-                            <a href="users.html">View Users</a>
+                            <a href="..\..\users\users.html">View Users</a>
                         </li>
                         <li>
-                            <a href="create.html">New Users</a>
+                            <a href="..\..\users\create.html">New Users</a>
                         </li>
                     </ul>
                 </li>
@@ -154,81 +154,83 @@
         </header>
         <div class="content">
             <div class="content-header">
-                <div style="font-size: 1.4rem;">Users</div>
-                <a id = "addButton" href="create.html">
-                    <span style="font-weight: 700;">+</span> New
-                </a>
-            </div>
-            <div>
-                <nav>
-                    <form action="">
-                        <div class="nav-content">
-                            <div class="nav-item" id="item-input">
-                                <label>Search for Users</label>
-                                <div class="search-order">
-                                    <i class='bx bx-search-alt-2'></i>
-                                    <input type="text" placeholder="Search">
-                                </div>
-                            </div>
-                            <div class="nav-select">
-                                <div class="nav-item">
-                                    <label>Status</label>
-                                    <select name="status" id="status" class="select-input">
-                                        <option value="available">Active</option>
-                                        <option value="low stock">Deactive</option>
-                                    </select>
-                                </div>
-                                <div class="nav-item">
-                                    <label>Role</label>
-                                    <select name="category" id="role" class="select-input">
-                                        <option value="all">All</option>
-                                        <option value="admin">Admin</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </nav>
-            </div>
-            <div class = "table-container">
-                <table class = "content-table">
-                    <thead>
-                        <tr>
-                            <th class="center-cell"><input type="checkbox"></th>
-                            <th>#</th>
-                            <th>Username</th>
-                            <th>Name</th>
-                            <th>Role</th>
-                            <th class = "center-cell">Status</th>
-                            <th class = "center-cell">Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="center-cell"><input type="checkbox"></td>
-                            <td>1</td>
-                            <td>
-                                <div class="row-image">
-                                    <img class="table-profile" src="\assets\images\Pingu-logo.png" alt="">
-                                    Pvngu
-                                </div>
-                            </td>
-                            <td>Omar Sanchez</td>
-                            <td>Admin</td>
-                            <td class = 'center-cell'><span class = 'status-active'>Active</span></td>
-                            <td class = 'actions center-cell'>
-                                <a href = 'edit.html'>
-                                    <i class='bx bxs-edit-alt' style = 'color: #2a8c3f'></i>
-                                </a>
-                                <a class="openModalD">
-                                    <i class='bx bx-trash' style = 'color: #fa7878'></i>
-                                </a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="header-text">
+                    <a href="categories.html">Categories</a>
+                    <div class="animated-header">> Edit Category</div>
                 </div>
             </div>
+            <form action="">
+                <div class="item-info">
+                    <div class="item-fields">
+                        <div class="content-items">
+                            <label>Name</label>
+                            <input type="text" value="stationery">
+                        </div>
+                        <div class="content-items">
+                            <label>Description</label>
+                            <textarea spellcheck="false" name="description" rows="6" style="min-width: 300px;"></textarea>
+                        </div>
+                    </div>
+                    <div class="file-content">
+                        <div class="file-icon">
+                            <img src="\assets\images\files-icon.png" alt="">
+                            <span>Drag an image or click to select a file</span>
+                        </div>
+                        <input type="file">
+                    </div>
+                </div>
+                <div class = "table-container">
+                    <table class = "content-table" style="margin-top: 20px;">
+                        <thead>
+                            <tr>
+                                <th class="center-cell"><input type="checkbox"></th>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th class = "center-cell">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="center-cell"><input type="checkbox"></td>
+                                <td>1</td>
+                                <td>
+                                    <div class="row-image">
+                                        <img class="table-image" src="\assets\images\pencil-test.png" alt="">
+                                        Pencil
+                                    </div>
+                                </td>
+                                <td class = 'actions center-cell'>
+                                    <a class="openModalD">
+                                        <i class='bx bx-trash' style = 'color: #fa7878'></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <form action="">
+                                    <td class="center-cell"></td>
+                                    <td>
+                                        <div class="content-items" style="margin-bottom: 0; flex-direction: column;">
+                                            <label>Add Item</label>
+                                            <select name="addItem">
+                                                <option value="Pencil">Pencil</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td class = 'actions center-cell'>
+                                        <input class="newButton" type="button" value="Add">
+                                    </td>
+                                </form>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="form-buttons">
+                    <input class="newButton cancelButton" type="button" value="Cancel">
+                    <input class="newButton" type="button" value="Save">
+                </div>
+            </form>
+        </div>
         <!-- Delete popup -->
         <dialog class="deleteModal modal">
             <div class="modalHeader">
@@ -236,7 +238,7 @@
                 <i class='bx bx-x closeBtnModalD modalX'></i>
             </div>
             <div class="modalContent DelModal">
-                <div class="logoutText">Are you sure you want to delete this user?</div>
+                <div class="logoutText">Are you sure you want to delete this item from this category?</div>
                 <div class="logoutButtons">
                     <button id="logoutClose" class = "closeBtnModalD">Cancel</button>
                     <form action="">
@@ -296,7 +298,9 @@
                 <div class="logoutText">Are you sure you want to logout?</div>
                 <div class="logoutButtons">
                     <button id="logoutClose" class = "closeBtnModalL">Cancel</button>
-                    <a href="/index.html"><button id="logoutOk" type="submit">Ok</button></a>
+                    <form action="">
+                        <a href="/index.html"><button id="logoutOk" type="submit">Ok</button></a>
+                    </form>
                 </div>
             </div>
         </dialog>
