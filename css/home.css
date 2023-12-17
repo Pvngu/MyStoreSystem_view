@@ -81,3 +81,131 @@
 .item-container:hover{
   background: var(--c-bg-sb-icon);
 }
+
+.cards{
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+ 
+.cards .right-content{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 30px;
+}
+
+.cards .left-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.cards .left-content .card-container{
+  width: 800px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.cards .card-item{
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+  height: 200px;
+  background: var(--c-bg-table-option);
+  border-radius: 23px;
+}
+
+.cards .card-table{
+  background: var(--c-bg-table-option);
+  flex-grow: 1;
+  border-radius: 23px;
+  height: 400px;
+}
+
+.card-item .card-header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-item .card-header .card-tittle{
+  font-weight: 600;
+}
+.card-item .card-content{
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.card-item .card-content .card-number{
+  font-size: 3rem;
+}
+
+.card-item .card-date{
+  text-align: right;
+}
+
+
+
+.card-table .card-table-header{
+  text-align: center;
+  padding-block: 15px;
+  font-weight: 600;
+}
+
+.card-table .card-table-content{
+  padding-inline: 20px;
+}
+
+table{
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 20px;
+  border: solid 1px var(--c-border-primary);
+}
+
+table thead tr{
+  text-align: left;
+  font-size: 0.8rem;
+  background: var(--c-bg-primary);
+}
+
+table th, table td{
+  padding: 12px 15px;
+}
+
+table tbody tr{
+  border-bottom: 1px solid var(--c-border-primary);
+  transition: all 0.5s ease;
+}
+
+table tbody tr:nth-of-type(even){
+  background-color: var(--c-bg-tb-even);
+}
+
+table thead{
+  border-bottom: 2px solid rgba(0, 0, 0, 0.20);
+}
+
+.row-image{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.table-image{
+  width: 45px;
+  height: 35px;
+}
+
+.dashboard-header{
+  margin-bottom: 14px;
+}
+
+.dashboard-header span{
+  font-size: 1.7rem;
+  font-weight: 500;
+}
