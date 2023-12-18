@@ -91,7 +91,7 @@
 .cards .right-content{
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+  flex-grow: 2;
   gap: 30px;
 }
 
@@ -99,10 +99,10 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+  flex-grow: 1;
 }
 
 .cards .left-content .card-container{
-  width: 800px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
@@ -121,7 +121,8 @@
   background: var(--c-bg-table-option);
   flex-grow: 1;
   border-radius: 23px;
-  height: 400px;
+  height: 390px;
+  overflow: hidden;
 }
 
 .card-item .card-header{
@@ -146,8 +147,6 @@
   text-align: right;
 }
 
-
-
 .card-table .card-table-header{
   text-align: center;
   padding-block: 15px;
@@ -161,14 +160,11 @@
 table{
   border-collapse: collapse;
   width: 100%;
-  border-radius: 20px;
-  border: solid 1px var(--c-border-primary);
 }
 
 table thead tr{
   text-align: left;
   font-size: 0.8rem;
-  background: var(--c-bg-primary);
 }
 
 table th, table td{
@@ -176,7 +172,6 @@ table th, table td{
 }
 
 table tbody tr{
-  border-bottom: 1px solid var(--c-border-primary);
   transition: all 0.5s ease;
 }
 
@@ -199,13 +194,25 @@ table thead{
 .table-image{
   width: 45px;
   height: 35px;
+  border-radius: 10px;
 }
 
 .dashboard-header{
   margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .dashboard-header span{
   font-size: 1.7rem;
   font-weight: 500;
+}
+
+.center-cell{
+  text-align: center;
+}
+
+.card-item.last-card{
+  height: 350px;
 }

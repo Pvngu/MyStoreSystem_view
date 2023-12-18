@@ -182,27 +182,30 @@
                 </div>
             </div>
             <div class = "table-container" style="margin-top: 20px;">
+                <span>item table</span>
                 <table class = "content-table">
                     <thead>
                         <tr>
                             <th class="center-cell"><input type="checkbox"></th>
-                            <th>#</th>
                             <th>Name</th>
-                            <th>Quantity</th>
+                            <th class="center-cell">Quantity</th>
+                            <th class="center-cell">Amount</th>
                             <th class = "center-cell">Actions</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td class="center-cell"><input type="checkbox"></td>
-                            <td>1</td>
                             <td>
                                 <div class="row-image">
                                     <img class="table-image" src="\assets\images\pencil-test.png" alt="">
                                     Pencil
                                 </div>
                             </td>
-                            <td>3</td>
+                            <td class="center-cell">
+                                <input class="input-box" type="number" min="1" style="max-width: 100px; text-align: right;">
+                            </td>
+                            <td >$10.00</td>
                             <td class = 'actions center-cell'>
                                 <a class="openModalD">
                                     <i class='bx bx-trash' style = 'color: #fa7878'></i>
@@ -210,19 +213,21 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="center-cell"></td>
+                            <td class="center-cell"><input type="checkbox"></td>
                             <td>
-                                <div class="content-items" style="margin-bottom: 0; flex-direction: column;">
-                                    <label>Add Item</label>
-                                    <select name="addItem">
-                                        <option value="Pencil">Pencil</option>
+                                <div class="row-image">
+                                    <img class="table-image" src="\assets\images\default-gray.png" alt="">
+                                    <select class="input-box" name="item" style="max-width: 300px;">
+                                        <option value="pencil">Pencil - Stock 10</option>
                                     </select>
                                 </div>
                             </td>
-                            <td></td>
-                            <td></td>
+                            <td class="center-cell">
+                                <input class="input-box" type="number" min="1" style="max-width: 100px; text-align: right;">
+                            </td>
+                            <td ></td>
                             <td class = 'actions center-cell'>
-                                <input class="newButton" type="button" value="Add">
+                                <input class="newButton" type="submit" value="Add">
                             </td>
                         </tr>
                     </tbody>

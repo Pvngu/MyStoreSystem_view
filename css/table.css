@@ -40,6 +40,7 @@ table thead{
 .table-image{
     width: 45px;
     height: 35px;
+    border-radius: 10px;
 }
 
 .table-profile{
@@ -243,13 +244,14 @@ table thead{
     width: 150px;
 }
 
-.content-items input, .content-items select{
+.content-items input, .content-items select, .input-box{
     height: 30px;
     border-radius: 5px;
     outline: none;
     border: solid 2px var(--c-border-primary);
     flex-grow: 1;
     padding-inline: 10px;
+    font-family: 'poppins', sans-serif;
 }
 
 .content-items textarea{
