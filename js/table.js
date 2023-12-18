@@ -144,6 +144,11 @@ openButtonL.addEventListener("click", () => {
     modalL.showModal()
 })
 
+for(i = 0; i < closeButtonL.length; i++){
+    closeButtonL[i].addEventListener("click", () => {
+    modalL.close();
+})
+}
 //About us window
 const closeButtonAU = document.querySelector(".closeBtnModalAU")
 const modalAU = document.querySelector(".aboutUsModal");
@@ -166,6 +171,20 @@ closeButtonAU.addEventListener("click", () => {
 closeButtonAS.addEventListener("click", () => {
     modalAS.close();
 })
+
+// delete popup
+const closeButtonD = document.querySelectorAll(".closeBtnModalD")
+const modalD = document.querySelector(".deleteModal")
+const openButtonD = document.querySelector(".openModalD")
+openButtonD.addEventListener("click", () => {
+    modalD.showModal()
+})
+
+for(i = 0; i < closeButtonD.length; i++){
+    closeButtonD[i].addEventListener("click", () => {
+    modalD.close();
+})
+}
 
 ////Theme switcher slider
 var html = document.getElementsByTagName('html');

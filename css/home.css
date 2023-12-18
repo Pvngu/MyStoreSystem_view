@@ -216,3 +216,41 @@ table thead{
 .card-item.last-card{
   height: 350px;
 }
+
+@media (max-width: 1150px) {
+  .cards{
+    flex-direction: column;
+  }
+
+  .cards .left-content{
+    margin: 0 auto;
+  }
+
+  .cards .right-content{
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 800px) {
+  .card-item .card-content .card-number{
+    font-size: 1.4rem;
+  }
+
+  .card-item .card-header .card-tittle{
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+
+  .card-item .card-date{
+    font-size: 0.7rem;
+  }
+
+  .cards .card-item{
+    height: 150px;
+  }
+
+  .cards .last-card{
+    height: 250px;
+  }
+}
