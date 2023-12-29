@@ -144,6 +144,12 @@ openButtonL.addEventListener("click", () => {
     modalL.showModal()
 })
 
+for(i = 0; i < closeButtonL.length; i++){
+    closeButtonL[i].addEventListener("click", () => {
+    modalL.close();
+})
+}
+
 //About us window
 const closeButtonAU = document.querySelector(".closeBtnModalAU")
 const modalAU = document.querySelector(".aboutUsModal");
